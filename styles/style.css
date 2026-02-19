@@ -5,7 +5,7 @@
 }
 body{
      background: #6e0c36;
-     background: linear-gradient(to bottom right, #6e0c36, rgb(138, 28, 79));
+     background: linear-gradient(to bottom right, #8c1046, rgb(0, 0, 0));
      color: white;
      margin: 5vh ;
      margin-top: 2vh;
@@ -42,11 +42,11 @@ body{
 
 a{
      text-decoration: none;
-     color: rgb(146, 212, 190);
+     color: rgb(14, 97, 69);
 
 }
 .nave a{
-     border-bottom: 1px solid black;
+     border-bottom: 1px solid rgb(57, 0, 41);
      border-radius: 0.5em;
      color: #211C84;
      transition: 50ms ease-in-out;
@@ -127,12 +127,15 @@ a{
      margin-top: 2.4em;
      align-self: center;
      border: none;
-     transition: 5ms ease-in-out;
+     color: white;
+     background-color: #500526;
+     transition: 40ms ease-in-out;
 }
 .formulario button:hover{
      border: 2px solid rgb(80, 13, 41);;
-     border-color: rgb(23, 59, 23);
-     color: rgb(39, 131, 39);
+     border-color: rgb(255, 255, 255);
+     color: rgb(231, 231, 88);
+     font-size:large;
 }
 .aviso{
      margin: 2em;
