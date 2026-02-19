@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     background: #7A73D1;
+     color: white;
+     margin: 5vh ;
+     margin-top: 2vh;
+
+
+}
+.naveg{
+     
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-around;
+     align-items: center;
+     border-bottom: 1px solid rgb(80, 13, 41);
+     padding: 1.7em;
+
+}
+.titulo{
+     color: #211C84;
+     font-size: 4em;
+     display: inline-block;
+}
+
+.nave{
+     list-style: none;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-around;
+     align-items: center;
+     font-size: 1.4em;
+     gap: 1em;
+     
+     
+}
+
+a{
+     text-decoration: none;
+     color: rgb(146, 212, 190);
+
+}
+.nave a{
+     border-bottom: 1px solid black;
+     border-radius: 0.5em;
+     color: #211C84;
+     transition: 50ms ease-in-out;
+
+     
+}
+.nave a:hover{
+     
+     
+     color: rgb(80, 13, 41);
+     font-size: 1.1em;
+     
+     
+     
+}
+.corpo{
+     margin-top: 5vh;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-around;
+     align-items: center;
+}
+.subtitulo{
+     color:#211C84 ;
+     font-size: 5em;
+     transition: 0.1s ease-in-out;
+}
+ 
+ .brilhar{
+     color: inherit;
+     transition: 0.5s ease-in-out;
+ }
+ .brilhar:hover{
+      color: rgb(231, 231, 88);
+      text-shadow:  0 0 8px;
+ }
+.chamativo{
+     font-size: 1.5em;
+     color: rgb(80, 13, 41);
+     
+}
+.formulario{
+     margin-top: 3vh;
+     display: flex;
+     flex-flow: column nowrap;
+     max-width: 93%;
+}
+.formulario label{
+     margin-top: 1em;
+     font-size: 2em;
+     position: relative;
+     display: flex;
+}
+.formulario input{
+     padding: 0.5em;
+     border-radius: 10px;
+     transition: 5ms ease-in-out;
+}
+.formulario input:hover{
+     border: 2px solid rgb(80, 13, 41);
+}
+.formulario input::placeholder{
+     transition: 1s;
+}
+.formulario input:focus::placeholder{
+     position: absolute;
+     font-size: 0.5em;
+     color: black;
+     left: 0.7em;
+     top: 0.7em;
+
+}
+.formulario button{
+     padding: 0.3em;
+     min-width:8em ;
+     font-size: 1em;
+     border-radius: 10px;
+     margin-top: 2.4em;
+     align-self: center;
+     border: none;
+     transition: 5ms ease-in-out;
+}
+.formulario button:hover{
+     border: 2px solid rgb(80, 13, 41);;
+     border-color: rgb(23, 59, 23);
+     color: rgb(39, 131, 39);
+}
+.aviso{
+     margin: 2em;
+     margin-bottom: 1em;
+}
+.formulario ul, .formulario a{
+     font-size: 1em;
+     border: none;
+}
+.pe{
+     padding-top: 2.5em;
+     margin-top: 2.5em;
+     display: flex;
+     flex-flow: column nowrap;
+     align-content: center;
+     align-items: center;
+     gap: 2em;
+     border-top: 1px solid #211C84;
+}
+.contatos{
+     list-style: none;
+     display: flex;
+     flex-flow: row nowrap;
+     align-items: center;
+     gap: 5em;
+     
+}
+.contatos a{
+     text-decoration: none;
+      color: black;
+      transition: 0.1s ease-in-out;
+      
+}
+.contatos a:hover{
+     color: rgb(80, 13, 41);
+     padding-bottom: 6px;
+     border-radius: 15px;
+     border-bottom: 1px solid rgb(80, 13, 41);
+}
+.contatos img{
+     width: 20px;
+     height: 20px;
+     margin: 3px;
+     vertical-align: middle;
+}
