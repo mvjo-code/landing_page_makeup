@@ -88,8 +88,8 @@ a {
 }
 
 .brilhar:hover {
-     color: rgb(231, 231, 88);
-     text-shadow: 0 0 8px;
+     color: #ff2a6d;
+     text-shadow: 0 0 8px #ff3e7b84;
      transform: translateX(10px);
 }
 
@@ -184,8 +184,11 @@ a {
 
 .contatos a {
      text-decoration: none;
-     color: black;
+     color: #cccccc;
      transition: 0.1s ease-in-out;
+     display: flex;
+     align-items: center;
+     gap: 8px;
 
 }
 
@@ -196,13 +199,11 @@ a {
      border-bottom: 1px solid rgb(80, 13, 41);
 }
 
-.contatos img {
-     width: 20px;
-     height: 20px;
-     margin: 3px;
-     vertical-align: middle;
+.contatos i {
+    font-size: 25px; /* Tamanho do ícone */
+    margin-right: 10px;
+    color: #ffb6c1; /* Cor do ícone para combinar */
 }
-
 
 
 /* responsividade */
@@ -333,9 +334,14 @@ a {
      .pe {
           margin-top: 0;
           padding: 0;
+          border-top: none;
      }
 
      .pe h3 {
           font-size: 7vw;
+     }
+     
+     .pe a {
+          color: white;
      }
 }
