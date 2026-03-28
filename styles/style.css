@@ -1,19 +1,20 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
 }
-body{
+
+body {
      background: #6e0c36;
      background: linear-gradient(to bottom right, #8c1046, rgb(0, 0, 0));
      color: white;
-     margin: 5vh ;
+     margin: 5vh;
      margin-top: 2vh;
-
-
+     font-family: sans-serif
 }
-.naveg{
-     
+
+.naveg {
+
      display: flex;
      flex-flow: row nowrap;
      justify-content: space-around;
@@ -22,13 +23,14 @@ body{
      padding: 1.7em;
 
 }
-.titulo{
+
+.titulo {
      color: #211C84;
      font-size: 4em;
      display: inline-block;
 }
 
-.nave{
+.nave {
      list-style: none;
      display: flex;
      flex-flow: row nowrap;
@@ -36,116 +38,131 @@ body{
      align-items: center;
      font-size: 1.4em;
      gap: 1em;
-     
-     
+
+
 }
 
-a{
+a {
      text-decoration: none;
      color: rgb(14, 97, 69);
 
 }
-.nave a{
+
+.nave a {
+     display: inline-block;
      border-bottom: 1px solid rgb(57, 0, 41);
      border-radius: 0.5em;
      color: #211C84;
-     transition: 50ms ease-in-out;
+     transition: 1ms ease-in-out;
 
-     
+
 }
-.nave a:hover{
-     
-     
+
+.nave a:hover {
+
      color: rgb(80, 13, 41);
-     font-size: 1.1em;
-     
-     
-     
+     transform: scale(1.02);
+
+
+
 }
-.corpo{
-     margin-top: 5vh;
+
+.corpo {
+     padding-top: 5vh;
      display: flex;
      flex-flow: row nowrap;
      justify-content: space-around;
      align-items: center;
 }
-.subtitulo{
-     color:#211C84 ;
+
+.subtitulo {
+     color: #211C84;
      font-size: 5em;
      transition: 0.1s ease-in-out;
 }
- 
- .brilhar{
+
+.brilhar {
+     display: inline-block;
      color: inherit;
      transition: 0.19s ease-in-out;
- }
- .brilhar:hover{
-      color: rgb(231, 231, 88);
-      text-shadow:  0 0 8px;
- }
-.chamativo{
+}
+
+.brilhar:hover {
+     color: rgb(231, 231, 88);
+     text-shadow: 0 0 8px;
+     transform: translateX(10px);
+}
+
+.chamativo {
      font-size: 1.5em;
      color: rgb(80, 13, 41);
-     
-}
-.formulario{
-     margin-top: 3vh;
-     display: flex;
-     flex-flow: column nowrap;
-     max-width: 93%;
-}
-.formulario label{
-     margin-top: 1em;
-     font-size: 2em;
-     position: relative;
-     display: flex;
-}
-.formulario input{
-     padding: 0.5em;
-     border-radius: 10px;
-     transition: 5ms ease-in-out;
-}
-.formulario input:hover{
-     border: 2px solid rgb(80, 13, 41);
-}
-.formulario input::placeholder{
-     transition: 1s;
-}
-.formulario input:focus::placeholder{
-     position: absolute;
-     font-size: 0.5em;
-     color: black;
-     left: 0.7em;
-     top: 0.7em;
 
 }
-.formulario button{
-     padding: 0.3em;
-     min-width:8em ;
-     font-size: 1em;
-     border-radius: 10px;
-     margin-top: 2.4em;
-     align-self: center;
-     border: none;
-     color: white;
-     background-color: #500526;
-     transition: 40ms ease-in-out;
+
+/* Container dos ganchos e botão */
+.funil-beneficios {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+     /* Espaço entre as frases */
+     margin-top: 2em;
+     width: 100%;
+     max-width: 400px;
+     /* Não deixa ficar gigante no PC */
 }
-.formulario button:hover{
-     border: 2px solid rgb(80, 13, 41);;
-     border-color: rgb(255, 255, 255);
-     color: rgb(231, 231, 88);
-     font-size:large;
+
+/* O visual das frases de gancho */
+.gancho {
+     background-color: rgba(255, 255, 255, 0.05);
+     /* Fundo levemente transparente */
+     border-left: 4px solid #ff4d85;
+     padding: 12px 20px;
+     font-size: 1.1em;
+     color: #f2f2f2;
+     border-radius: 0 8px 8px 0;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     /* Espaço entre o emoji e o texto */
+     transition: 0.2s;
 }
-.aviso{
-     margin: 2em;
-     margin-bottom: 1em;
+
+.gancho:hover {
+     background-color: #8c104628;
+     transform: translateX(5px);
+     ;
 }
-.formulario ul, .formulario a{
-     font-size: 1em;
-     border: none;
+
+/* O Botão de Ação Final */
+.botao-agendar {
+     margin-top: 15px;
+     background-color: #ff2b6ec4;
+     /* Cor de destaque que chama o clique */
+     color: #ffffff;
+     text-decoration: none;
+     font-size: 1.3em;
+     font-weight: bold;
+     text-align: center;
+     padding: 15px;
+     border-radius: 30px;
+     box-shadow: 0 4px 15px rgba(255, 77, 133, 0.4);
+     /* Sombra neon sutil */
+     transition: 0.3s;
 }
-.pe{
+
+.botao-agendar:hover {
+     background-color: #ff2b6d;
+     transform: translateY(-3px);
+     cursor: pointer;
+     box-shadow: 0 8px 20px rgba(255, 77, 133, 0.6);
+}
+
+.imagen_pinceis {
+     max-width: 100%;
+     height: auto;
+}
+
+.pe {
      padding-top: 2.5em;
      margin-top: 2.5em;
      display: flex;
@@ -155,29 +172,170 @@ a{
      gap: 2em;
      border-top: 1px solid #211C84;
 }
-.contatos{
+
+.contatos {
      list-style: none;
      display: flex;
      flex-flow: row nowrap;
      align-items: center;
      gap: 5em;
-     
+
 }
-.contatos a{
+
+.contatos a {
      text-decoration: none;
-      color: black;
-      transition: 0.1s ease-in-out;
-      
+     color: black;
+     transition: 0.1s ease-in-out;
+
 }
-.contatos a:hover{
+
+.contatos a:hover {
      color: rgb(80, 13, 41);
      padding-bottom: 6px;
      border-radius: 15px;
      border-bottom: 1px solid rgb(80, 13, 41);
 }
-.contatos img{
+
+.contatos img {
      width: 20px;
      height: 20px;
      margin: 3px;
      vertical-align: middle;
+}
+
+
+
+/* responsividade */
+@media (max-width: 768px) {
+
+     body {
+          margin: 0;
+          padding: 0;
+     }
+     .naveg {
+
+          flex-direction: column;
+          padding: 15px 0 5px 0;
+          /* Menos espaço embaixo da logo */
+          border-bottom: none;
+     }
+
+     .titulo {
+          font-size: 2.2em;
+          margin-bottom: 0;
+
+     }
+
+     .nave {
+          display: none;
+     }
+
+     .corpo {
+          flex-direction: column;
+          text-align: center;
+          padding: 10px 15px 30px 15px
+     }
+
+     .esquda {
+          max-width: 100%;
+          margin-left: 0;
+          min-height: calc(100vh - 18vh);
+          gap: 1em;
+
+     }
+
+     .direita {
+          margin-top: 0;
+          padding-top: 0;
+          margin-bottom: 0;
+     }
+
+     .subtitulo {
+          font-size: 3em;
+     }
+
+     .gancho {
+          text-align: left;
+          font-size: 1em;
+          padding: 10px 15px;
+     }
+
+     .imagen_pinceis {
+          margin-top: 40px;
+          width: 90%;
+     }
+
+     .contatos {
+          flex-direction: column;
+          gap: 1.5em;
+     }
+
+     /*contrastando cores */
+     .titulo,
+     .subtitulo {
+          color: #ffb6c1;
+          align-self: center;
+     }
+
+     .nave a {
+          color: #ffb6c1;
+     }
+
+     .nave a:hover {
+          color: #ffb6c1d4;
+
+     }
+
+     .chamativo {
+          color: #f2f2f2;
+          /* Um branco quase puro para o texto de apoio dar leitura */
+          margin-bottom: 25px;
+     }
+
+     /* resolvendo vazamento de menu */
+     .nave {
+          flex-wrap: wrap;
+          /* Se não couber, joga pra linha de baixo */
+          justify-content: center;
+          gap: 10px;
+          /* Diminui o buraco entre os links */
+          width: 100%;
+     }
+
+     .nave a {
+          font-size: 1em;
+          /* Diminui um tiquinho para caber melhor */
+     }
+
+     .subtitulo {
+          font-size: 3em;
+          margin-top: 16px;
+          line-height: 1.1;
+          width: 100%;
+          white-space: nowrap;
+          font-size: 12vw;
+     }
+
+     .subtitulo .brilhar {
+          font-size: 24vw;
+          color: #fe5188;
+     }
+
+     .contatos {
+          margin-top: 0;
+
+     }
+     footer {
+          margin: 0;
+          margin-top: 0;
+     }
+
+     .pe {
+          margin-top: 0;
+          padding: 0;
+     }
+
+     .pe h3 {
+          font-size: 7vw;
+     }
 }
